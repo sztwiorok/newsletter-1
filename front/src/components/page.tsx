@@ -6,7 +6,7 @@ interface IPageProps {
 
 const Page = ({ children }: IPageProps) => {
   return (
-    <div className="flex justify-center align-middle h-screen bg-red-400">
+    <div className="flex justify-center align-middle h-screen bg-pink-400">
       {children}
     </div>
   );
