@@ -5,7 +5,7 @@ ARG VITE_BACKEND_URL
 WORKDIR /app
 
 COPY . /app/
-RUN npm ci
+RUN npm install
 RUN VITE_BACKEND_URL=$VITE_BACKEND_URL npm run build
 
 FROM nginx
